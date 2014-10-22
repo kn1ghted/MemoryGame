@@ -1,4 +1,15 @@
 ﻿.memory-game {
   margin-top: 40px; }
+  .memory-game .card {
+    background: #eee;
+    box-shadow: 0 0 10px 0 #aaa;
+    border-radius: 10px;
+    height: 160px;
+    width: 120px;
+    border: 1px solid #ccc; }
+    .memory-game .card .content {
+      font-size: 36px;
+      margin: 42% auto;
+      text-align: center; }
 
 /*# sourceMappingURL=memoryGame.css.map */
