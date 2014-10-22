@@ -119,12 +119,31 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppJs\MemoryGame\app\controllers\c.main.js" />
+    <Content Include="AppJs\MemoryGame\app\directives\d.board.js" />
+    <Content Include="AppJs\MemoryGame\app\directives\d.card.js" />
+    <Content Include="AppJs\MemoryGame\app\directives\views\d.board.html" />
+    <Content Include="AppJs\MemoryGame\app\directives\views\d.card.html" />
+    <Content Include="AppJs\MemoryGame\app\namespaces.js" />
+    <Content Include="AppJs\MemoryGame\app\run.js" />
+    <Content Include="AppJs\MemoryGame\memoryGame.js">
+      <DependentUpon>memoryGame.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="AppJs\MemoryGame\memoryGame.min.js">
+      <DependentUpon>memoryGame.js</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\jasmine\jasmine.css" />
     <Content Include="Content\jasmine\jasmine_favicon.png" />
+    <Content Include="Content\memoryGame.css">
+      <DependentUpon>memoryGame.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\memoryGame.min.css">
+      <DependentUpon>memoryGame.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -168,6 +187,14 @@
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Content\memoryGame.scss" />
+    <Content Include="Content\memoryGame.css.map">
+      <DependentUpon>memoryGame.css</DependentUpon>
+    </Content>
+    <Content Include="AppJs\MemoryGame\memoryGame.js.bundle" />
+    <Content Include="AppJs\MemoryGame\memoryGame.min.js.map">
+      <DependentUpon>memoryGame.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -928,8 +955,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\version.json" />
   </ItemGroup>
