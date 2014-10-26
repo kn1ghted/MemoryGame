@@ -127,8 +127,8 @@
     <Content Include="AppJs\MemoryGame\app\factories\cardFactory.js" />
     <Content Include="AppJs\MemoryGame\app\namespaces.js" />
     <Content Include="AppJs\MemoryGame\app\run.js" />
-    <Content Include="AppJs\MemoryGame\app\services\gameRuleService.js" />
     <Content Include="AppJs\MemoryGame\app\services\deckService.js" />
+    <Content Include="AppJs\MemoryGame\app\services\gameRuleService.js" />
     <Content Include="AppJs\MemoryGame\memoryGame.js">
       <DependentUpon>memoryGame.js.bundle</DependentUpon>
     </Content>

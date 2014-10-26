@@ -136,13 +136,17 @@ angular.module('MemoryGame.services')
 					if (thereAreAlready2CardsVisible()) {
 						var visibleCards = getVisibleCards();
 						if (itIsACouple(visibleCards)) {
-							givePoints(visibleCards);
+							setCardsAsDiscovered(visibleCards);
+							givePoints();
 						}
 						flipBackCards();
 					}
 					if (isNotlreadyDiscovered(card)) {
-						gameInfo.clicks += 1;
-						card.flip();
+						if(!card.flipped) {
+							gameInfo.clicks += 1;
+							card.flip();
+						}
+						givePoints();
 					}
 				};
 
@@ -180,11 +184,20 @@ angular.module('MemoryGame.services')
 					return false;
 				}
 
-				function givePoints(visibleCards) {
-					gameInfo.score++;
+				function setCardsAsDiscovered(visibleCards) {
 					for (var i = 0; i < visibleCards.length; i++) {
 						visibleCards[i].discovered = true;
 					}
+				}
+
+				function givePoints() {
+					for (var i = 0, j = 0; i < _cards.length; i++) {
+						if (_cards[i].discovered) {
+							j++;
+						}
+					}
+
+					gameInfo.score = j;
 				}
 
 				function isNotlreadyDiscovered(card) {
