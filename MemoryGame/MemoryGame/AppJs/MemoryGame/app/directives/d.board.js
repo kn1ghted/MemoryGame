@@ -4,7 +4,9 @@
 		restrict: 'E',
 		replace: true,
 		transclude:true,
-		scope: {},
+		scope: {
+			gameInfo:'='
+		},
 		templateUrl: '/AppJs/MemoryGame/app/directives/views/d.board.html',
 		link: function(scope) {
 			

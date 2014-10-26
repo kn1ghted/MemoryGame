@@ -1,1 +1,1 @@
-﻿{"version":3,"file":"memoryGame.css","sources":["memoryGame.scss"],"names":[],"mappings":"AAGA;EACI,YAAW;EAAf,aAAa;IAGL,YAAW;IACX,YAAW;IACX,eAAc;IACd,QAAO;IACP,OAAM;IACN,QAAO;IAAf,aAAa,MAAM;MAGP,WAAW;MACX,QAAQ;MACR,YAAY"}
+﻿{"version":3,"file":"memoryGame.css","sources":["memoryGame.scss"],"names":[],"mappings":"AAGA;EACI,YAAW;EAEf,aAAa,WAAW;IAEZ,YAAW;IACX,WAAU;EAEtB,aAAa;IAGL,QAAO;IACP,YAAuC;IACvC,iBAAgB;IAChB,YAAW;IACX,eAAc;IACd,QAAO;IACP,OAAM;IACN,QAAO;IACP,OAAM;IACN,cAAa;IACb,YAAW;IAAnB,aAAa,KAAK;MAGP,YAAW;MACX,QAAO;IAClB,aAAa,MAAM;MAGP,WAAW;MACX,QAAQ;MACR,YAAY"}

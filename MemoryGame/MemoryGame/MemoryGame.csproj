@@ -124,8 +124,11 @@
     <Content Include="AppJs\MemoryGame\app\directives\d.card.js" />
     <Content Include="AppJs\MemoryGame\app\directives\views\d.board.html" />
     <Content Include="AppJs\MemoryGame\app\directives\views\d.card.html" />
+    <Content Include="AppJs\MemoryGame\app\factories\cardFactory.js" />
     <Content Include="AppJs\MemoryGame\app\namespaces.js" />
     <Content Include="AppJs\MemoryGame\app\run.js" />
+    <Content Include="AppJs\MemoryGame\app\services\gameRuleService.js" />
+    <Content Include="AppJs\MemoryGame\app\services\deckService.js" />
     <Content Include="AppJs\MemoryGame\memoryGame.js">
       <DependentUpon>memoryGame.js.bundle</DependentUpon>
     </Content>
@@ -153,6 +156,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="images\alice-bg.png" />
+    <Content Include="images\gabriele-bg.png" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />

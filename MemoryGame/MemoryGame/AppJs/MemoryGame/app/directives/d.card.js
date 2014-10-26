@@ -3,10 +3,19 @@
 	return {
 		restrict: 'E',
 		replace: true,
-		scope: {},
+		scope: {
+			model: "=",
+			flip: "&"
+		},
 		templateUrl: '/AppJs/MemoryGame/app/directives/views/d.card.html',
 		link: function (scope) {
+			scope.showVal = function() {
+				if (scope.model.flipped) {
+					return scope.model.val;
+				}
 
+				return "";
+			};
 		}
 	};
 }]);

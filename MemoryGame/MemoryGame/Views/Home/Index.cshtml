@@ -2,8 +2,8 @@
     ViewBag.Title = "Memory Game";
 }
 
-<div class="memory-game" ng-controller="mainCtrl">
-	<board>
-		<card></card>
+<div class="memory-game" data-ng-controller="mainCtrl">
+	<board game-info="gameInfo">
+		<card model="card" flip="flipCard(card)" data-ng-repeat="card in cards track by card.id"></card>
 	</board>
 </div>

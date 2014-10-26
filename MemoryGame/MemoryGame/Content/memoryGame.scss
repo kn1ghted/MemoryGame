@@ -4,13 +4,30 @@
 .memory-game {
     margin-top:40px;
 
+    .game-info {
+        .score {
+            text-align:center;
+            font-size:22px;
+        }
+    }
+
     .card {
-        background:#eee;
+        cursor:pointer;
+        background:url("../images/alice-bg.png") no-repeat;
+        background-size:cover;
         box-shadow:0 0 10px 0 #aaa;
         border-radius:10px;
         height:160px;
         width:120px;
         border:1px solid #ccc;
+        float:left;
+        margin-right:20px;
+        margin-top:20px;
+
+        &.true {
+           background:#eee;
+           cursor:default;
+        }
 
         .content {
             font-size: 36px;
